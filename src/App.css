@@ -1,0 +1,147 @@
+#root{
+  height: 100vh;
+}
+/* .inputDiv{
+  width: 844px;
+margin-right: 88px;
+} */
+.appId , .phoneNo{
+  width: 317px;
+}
+.form{
+  padding-inline: 94px;
+  
+}
+.formBtns{
+  padding-inline: 94px;
+}
+.appId{
+  display: flex;
+  flex-direction: column;
+}
+label , p{
+  font-size: 14px;
+  line-height: 2;
+}
+.backBtn{
+  font-size: 20px;
+  color: #3890ce;
+background-color: white;
+border: 1.5px solid #3890ce;
+border-radius: 6px;
+padding: 6px 12px;
+line-height: 1.5;
+}
+.backBtn:hover {
+  transform: scale(1.019);
+}
+.addMoreBtn{
+  background-color: #106E9F;
+  line-height: 3;
+  border-radius: 88px;
+  border: none;
+  width: 187px;  
+  cursor: pointer;
+  color: white;
+  /* font-size:1rem; */
+}
+.btn{
+  background: linear-gradient(90deg, #106E9F -32.48%, #61C2D0 122.26%);
+}
+input::placeholder {
+  font-size: 12px;
+}
+input[type="text"] , input[type="number"] , textarea , select, option{
+  font-size: 14px !important;
+  letter-spacing: .5px;
+}
+label , p{
+  font-weight: 500;
+}
+
+.starIcon::after{
+  content: "*" !important;
+  color: red!important;
+  height: 22px!important;
+}
+
+ .x_axisLine{
+  border-bottom: 2px solid #106E9F;
+  margin: auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+#jobPosition{
+  font-size:14px;
+}
+.form-check-label{
+  font-weight: 700;
+}
+.errorMsg{
+  font-size: 14px;
+}
+::placeholder{
+font-size: 14px;
+}
+.SubmitBtn{
+  /* margin-right: 108px; */
+  background-image: linear-gradient(90deg, rgb(29, 194, 254), rgb(87, 208, 252));
+}
+.btn:hover{
+  transform: scale(1.019);
+}
+  .stepHeading{
+  font-size: 21px;
+  font-weight: 600;
+  color: #23536D;
+  /* line-height; */
+}
+.empHisHeading{
+  padding-left: 94px;
+}
+.tick-icon{
+  background-color: rgb(54 189 54);
+  border-radius: 50%;
+  height: 29px;
+  color: white;
+  width: 29px;
+}
+.logo{
+  height: 111px;
+}
+.blueStep{
+  background-color: #3890ce;
+}
+.tickDiv{
+  margin-left: 31px;
+  width: 282px;
+}
+.numbering{
+  width: 29px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 50%; 
+}
+.step1 h3{
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  width: calc(282px - 58px);
+  padding-right: 18px;
+  margin-bottom: 0;
+  align-items: center;
+
+}
+.step1{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+  padding-left: 118px;
+  text-align: end;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+}
