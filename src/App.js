@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <appContext.Provider value={{ setStepNumber, stepNumber }}>
-        <div className="logo d-flex justify-content-center">
+        <div className="logo ff d-flex justify-content-center">
           <img src={logo} alt="" className="h-75  pt-4" />
         </div>
         <div className="d-flex justify-content-between">
