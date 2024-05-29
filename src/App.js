@@ -29,7 +29,7 @@ function App() {
         </div>
         <div className="d-flex justify-content-between">
           <LeftSideRadio />
-          hello
+          
           {stepNumber === 1 && <InterviewForm />}
           {stepNumber === 2 && <JobDetails />}
           {stepNumber === 3 && <PersonalDetails />}
