@@ -5,16 +5,16 @@ import { appContext } from "../App";
 
 const jobPositionSchema = Yup.object().shape({
   jobPosition: Yup.string()
-  .required("Required")
-  .oneOf(
-    [
-      "Software Developer",
-      "Web Developer",
-      "Mobile App Developer",
-      "Systems Administrator",
-    ],
-    "Select Job Position"
-  ),
+    .required("Required")
+    .oneOf(
+      [
+        "Software Developer",
+        "Web Developer",
+        "Mobile App Developer",
+        "Systems Administrator",
+      ],
+      "Select Job Position"
+    ),
 });
 const JobDetails = () => {
   const { setStepNumber, stepNumber } = useContext(appContext);
@@ -34,7 +34,9 @@ const JobDetails = () => {
   return (
     <form onSubmit={formik.handleSubmit} className="form flex-grow-1">
       <div className="mb-3 col">
-        <h3 className="stepHeading mb-4 text-decoration-underline">Job details</h3>
+        <h3 className="stepHeading mb-4 text-decoration-underline">
+          Job details
+        </h3>
         <div className="  inputCon">
           <div className="appId w-100">
             <label for="jobPosition" className="form-label starIcon">
@@ -65,7 +67,11 @@ const JobDetails = () => {
           </div>
         </div>
         <div className="sendOtpDiv w-100 text-end mt-5">
-          <button className="btn text-white" type="submit" style={{width:"124px"}}>
+          <button
+            className="btn text-white continue pb-2 pt-2"
+            type="submit"
+  
+          >
             Continue
           </button>
         </div>

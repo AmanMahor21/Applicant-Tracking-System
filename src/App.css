@@ -1,129 +1,145 @@
-#root{
+#root {
   height: 100vh;
 }
 /* .inputDiv{
   width: 844px;
 margin-right: 88px;
 } */
-.appId , .phoneNo{
-  width: 317px;
+.appId,
+.phoneNo {
+  /* width: 317px; */
 }
-.form{
+.form {
+  padding-inline: 8.896vw;
+}
+.formBtns {
   padding-inline: 94px;
-  
 }
-.formBtns{
-  padding-inline: 94px;
-}
-.appId{
+.appId {
   display: flex;
   flex-direction: column;
 }
-label , p{
+label,
+p {
   font-size: 14px;
   line-height: 2;
 }
-.backBtn{
+.backBtn {
   font-size: 20px;
   color: #3890ce;
-background-color: white;
-border: 1.5px solid #3890ce;
-border-radius: 6px;
-padding: 6px 12px;
-line-height: 1.5;
+  background-color: white;
+  border: 1.5px solid #3890ce;
+  border-radius: 6px;
+  padding: 6px 12px;
+  line-height: 1.5;
 }
 .backBtn:hover {
   transform: scale(1.019);
 }
-.addMoreBtn{
-  background-color: #106E9F;
+.addMoreBtn {
+  background-color: #106e9f;
   line-height: 3;
   border-radius: 88px;
   border: none;
-  width: 187px;  
+  /* width: 15.3vw; */
+  padding-inline: 4.89vw;
   cursor: pointer;
   color: white;
+  /* white-space: nowrap; */
   /* font-size:1rem; */
 }
-.btn{
-  background: linear-gradient(90deg, #106E9F -32.48%, #61C2D0 122.26%);
+.btn {
+  background: linear-gradient(90deg, #106e9f -32.48%, #61c2d0 122.26%);
+}
+
+.continue {
+  padding-inline: 5.5vw !important;
 }
 input::placeholder {
   font-size: 12px;
 }
-input[type="text"] , input[type="number"] , textarea , select, option{
+input[type="text"],
+input[type="number"],
+textarea,
+select,
+option {
   font-size: 14px !important;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
-label , p{
+label,
+p {
   font-weight: 500;
 }
 
-.starIcon::after{
+.starIcon::after {
   content: "*" !important;
-  color: red!important;
-  height: 22px!important;
+  color: red !important;
+  height: 22px !important;
 }
 
- .x_axisLine{
-  border-bottom: 2px solid #106E9F;
+.x_axisLine {
+  border-bottom: 2px solid #106e9f;
   margin: auto;
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
-#jobPosition{
-  font-size:14px;
-}
-.form-check-label{
-  font-weight: 700;
-}
-.errorMsg{
+#jobPosition {
   font-size: 14px;
 }
-::placeholder{
-font-size: 14px;
+.form-check-label {
+  font-weight: 700;
 }
-.SubmitBtn{
+.errorMsg {
+  font-size: 14px;
+}
+::placeholder {
+  font-size: 14px;
+}
+.SubmitBtn {
   /* margin-right: 108px; */
-  background-image: linear-gradient(90deg, rgb(29, 194, 254), rgb(87, 208, 252));
+  background-image: linear-gradient(
+    90deg,
+    rgb(29, 194, 254),
+    rgb(87, 208, 252)
+  );
 }
-.btn:hover{
+.btn:hover {
   transform: scale(1.019);
 }
-  .stepHeading{
+.stepHeading {
   font-size: 21px;
   font-weight: 600;
-  color: #23536D;
+  color: #23536d;
   /* line-height; */
 }
-.empHisHeading{
+.empHisHeading {
   padding-left: 94px;
 }
-.tick-icon{
+.tick-icon {
   background-color: rgb(54 189 54);
   border-radius: 50%;
   height: 29px;
   color: white;
   width: 29px;
 }
-.logo{
+.logo {
   height: 111px;
 }
-.blueStep{
+.blueStep {
   background-color: #3890ce;
 }
-.tickDiv{
+.tickDiv {
   margin-left: 31px;
   width: 282px;
 }
-.numbering{
+.numbering {
   width: 29px;
   height: 29px;
   line-height: 29px;
   text-align: center;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
-.step1 h3{
+.step1 h3 {
   justify-content: flex-end;
   font-size: 15px;
   font-weight: 500;
@@ -132,16 +148,55 @@ font-size: 14px;
   padding-right: 18px;
   margin-bottom: 0;
   align-items: center;
-
 }
-.step1{
+.step1 {
   display: flex;
   justify-content: space-between;
   padding-top: 33px;
-  padding-left: 118px;
+  padding-left: 8vw;
   text-align: end;
 }
-.checkbox{
+.checkbox {
   display: flex;
   align-items: center;
+}
+.doneSvg {
+  width: 13vmax;
+  height: 13vmax;
+}
+.WellText {
+  font-size: 4em;
+  font-family: Geneva;
+}
+.completed_text {
+  font-family: Geneva;
+}
+
+@media screen and (max-width: 730px) {
+  .step1 {
+    padding-left: 4vw;
+  }
+  .tickDiv {
+    width: 28vw;
+  }
+  .addMoreBtn {
+    /* width: 25vw; */
+    /* padding-inline: 4vw; */
+  }
+}
+@media screen and (max-width: 550px) {
+  .tickDiv {
+    display: none;
+  }
+  .addMoreBtn {
+    line-height: 2.5 !important;
+  }
+  .btn,
+  .backBtn,
+  .continue {
+    height: 42px !important;
+  }
+  .WellText {
+    padding-top: 11vh;
+  }
 }

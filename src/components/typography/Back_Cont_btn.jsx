@@ -11,10 +11,7 @@ const Back_Cont_btn = ({ formik, handleAddMore }) => {
       <div>
         {(stepNumber == 7 || stepNumber == 4) && (
           <div className=" d-flex justify-content-end">
-            <button
-              className="addMoreBtn w-25"
-              onClick={(e) => handleAddMore(e)}
-            >
+            <button className="addMoreBtn" onClick={(e) => handleAddMore(e)}>
               <FaPlus /> <label className="text-md fw-bold">Add More</label>
             </button>
           </div>
@@ -27,7 +24,7 @@ const Back_Cont_btn = ({ formik, handleAddMore }) => {
             <MdOutlineKeyboardBackspace /> <label>Back</label>
           </button>
           <button
-            className="btn btn-info w-25 text-white "
+            className="btn btn-info text-white continue"
             type="submit"
             onClick={formik.handleSubmit}
           >

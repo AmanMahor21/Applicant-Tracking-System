@@ -161,11 +161,8 @@ const EmploymentPage = ({ formik }) => {
         ))}
 
         <Back_Cont_btn formik={formik} handleAddMore={handleAddMore} />
+        <br />
       </form>
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };

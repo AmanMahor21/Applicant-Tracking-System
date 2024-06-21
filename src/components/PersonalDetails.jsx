@@ -264,7 +264,7 @@ const PersonalDetails = () => {
           >
             <MdOutlineKeyboardBackspace /> <label>Back </label>
           </button>
-          <button className="btn  w-25 text-white" type="submit">
+          <button className="btn  continue text-white " type="submit">
             Continue
           </button>
         </div>
